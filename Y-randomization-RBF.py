@@ -16,7 +16,7 @@ np.random.seed(68)
 random.seed(68)
 
 # --- 读取数据 ---
-filename = '6result_guiyihua2.csv'  # CSV文件路径
+filename = 'Your data.csv'  # CSV文件路径
 try:
     df = pd.read_csv(filename, header=None) # 读取 CSV，假设没有表头
 except FileNotFoundError:
@@ -428,5 +428,6 @@ if n_valid_perms > 0:
         print("\n未找到 Matplotlib 库。跳过绘制随机化结果直方图。")
     except Exception as e:
         print(f"\n绘制随机化结果直方图时出错: {e}")
+
 
 print("\n脚本执行完毕.")
