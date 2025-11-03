@@ -14,8 +14,7 @@ np.random.seed(42)
 random.seed(42)
 
 # 读取数据
-filename = '56result_guiyihua2.csv'
-df = pd.read_csv(filename, header=None)
+filename = 'Your data.csv(filename, header=None)
 
 y = df.iloc[:, -1].values
 X = df.iloc[:, :-1].values
@@ -402,3 +401,4 @@ final_rmse = sqrt(mean_squared_error(y_true, y_predict))
 print("\n最终评估结果：")
 print(f'测试集 R² = {final_test_r2:.4f}')
 print(f'均方根误差 RMSE = {final_rmse:.4f}')
+
