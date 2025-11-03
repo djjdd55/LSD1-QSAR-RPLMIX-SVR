@@ -17,7 +17,7 @@ np.random.seed(40)
 random.seed(40)
 
 # --- 读取数据 ---
-filename = '6result_guiyihua2.csv' # 确保文件名正确
+filename = 'Your data.csv' # 确保文件名正确
 try:
     df = pd.read_csv(filename, header=None)
 except FileNotFoundError:
@@ -619,6 +619,7 @@ if n_valid_perms > 0 and np.isfinite(original_test_r2):
         print(f"\n绘制随机化结果直方图时出错: {e}")
 else:
     print("\n由于原始 R² 无效或无有效置换结果，跳过绘制直方图。")
+
 
 
 print("\n脚本执行完毕.")
