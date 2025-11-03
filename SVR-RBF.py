@@ -13,7 +13,7 @@ np.random.seed(49)
 random.seed(49)
 
 # 读取数据
-filename = '56result_guiyihua2.csv'  # CSV文件路径
+filename = 'Your data.csv'  # CSV文件路径
 df = pd.read_csv(filename, header=None)
 # 分离特征和目标变量
 X = df.iloc[:, :-1].values  # 所有行，除最后一列外的所有列作为特征
@@ -289,4 +289,5 @@ plt.legend()
 plt.tight_layout()
 plt.savefig('rbf_kernel_optimization_results.png', dpi=300)
 plt.show()
+
 
