@@ -10,10 +10,10 @@ from sklearn.metrics import mean_squared_error
 from pyswarm import pso
 
 # --- 全局变量 ---
-CSV_FILE_PATH = 'MMMM.csv'
+CSV_FILE_PATH = 'descriptors data.csv'
 TARGET_COLUMN = 'TEZHENG'
 NUM_TOP_FEATURES = 8
-CORRELATION_THRESHOLD = 0.6
+CORRELATION_THRESHOLD = 0.8
 VARIANCE_THRESHOLD = 0.01
 RANDOM_STATE = 14
 
@@ -21,7 +21,7 @@ PSO_N_PARTICLES = 50
 PSO_MAX_ITER = 20
 
 
-# preprocess_descriptors 函数 (与之前版本相同)
+# preprocess_descriptors 函数 
 def preprocess_descriptors(csv_file, target_column='TEZHENG', variance_threshold=0.01, correlation_threshold=0.99,
                            prioritized_list=None):
     if prioritized_list is None:
@@ -468,5 +468,6 @@ if __name__ == '__main__':
                         print(f"{i + 1}. {feature} (排名信息缺失)")
             else:
                 print("\n最终集成投票 (含RFE, PSO调优后 - 无CV) 未能选出任何特征。")
+
 
     print(f"\n--- 整体特征选择流程结束 ---")
