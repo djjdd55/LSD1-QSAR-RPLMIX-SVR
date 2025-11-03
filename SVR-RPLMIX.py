@@ -14,8 +14,6 @@ import random
 # ==============================================================================
 
 # 设置随机种子以确保结果可重复
-# 警告：使用 seed=26 会导致模型优化失败，所有预测值接近0。
-# 建议修改为 np.random.seed(42) 和 random.seed(42) 来获得理想结果。
 np.random.seed(26)
 random.seed(26)
 
@@ -377,4 +375,5 @@ plt.savefig('final_plot_cleaned_and_styled.png', dpi=300)
 
 # 显示图片
 plt.show()
+
 
