@@ -15,7 +15,7 @@ np.random.seed(50)
 random.seed(50)
 
 # 读取数据
-filename = '56result_guiyihua2.csv'
+filename = 'Your data.csv'
 df = pd.read_csv(filename, header=None)
 
 # 分离特征和目标变量
@@ -379,3 +379,4 @@ legend.get_frame().set_edgecolor('0.8')
 plt.tight_layout()
 plt.savefig('svr_rbf_final_plot_poly_cleaned.png', dpi=300)
 plt.show()
+
