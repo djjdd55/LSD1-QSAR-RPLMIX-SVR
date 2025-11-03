@@ -20,7 +20,7 @@ np.random.seed(26)
 random.seed(26)
 
 # 读取数据
-filename = '655result_guiyihua2.csv'
+filename = 'Your data.csv'
 df = pd.read_csv(filename, header=None)
 
 # 分离特征 (X) 和目标变量 (y)
@@ -377,3 +377,4 @@ plt.savefig('final_plot_cleaned_and_styled.png', dpi=300)
 
 # 显示图片
 plt.show()
+
